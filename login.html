@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Luminaris</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Luminaris">
+    <div class="nav-center">
+      <div class="search-box">
+        <input type="text" placeholder="Cari produk...">
+        <button>Cari</button>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="produk.html">Produk</a>
+      <a href="tentang.html">Tentang Kami</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Masuk ke Akun Anda</h2>
+    <form class="login-form" onsubmit="return loginUser(event)">
+      <input type="text" id="username" placeholder="Masukkan Username" required>
+      <input type="password" id="password" placeholder="Masukkan Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginMessage" style="text-align:center; color:#ff9800;"></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Luminaris</p>
+  </footer>
+</body>
+</html>
